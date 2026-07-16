@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: linear-gradient(to bottom, rgba(10, 5, 8, 0.95), rgba(10, 5, 8, 0.7));
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.search {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  width: 200px;
+  outline: none;
+}
+
+.search:focus {
+  border-color: var(--accent);
+}

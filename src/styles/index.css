@@ -1,0 +1,32 @@
+:root {
+  --bg: #0a0508;
+  --surface: #17101a;
+  --surface-hover: #221527;
+  --accent: #ff2f92;
+  --accent-soft: #ff8fc4;
+  --gold: #ffd9a0;
+  --text: #f7eef2;
+  --text-muted: #b09aac;
+  --border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
