@@ -55,7 +55,7 @@
   font-size: 28px;
   letter-spacing: 2px;
   color: var(--accent-soft);
-  z-index: 2;
+  z-index: 1;
 }
 
 .beam {
@@ -67,7 +67,7 @@
   background: linear-gradient(120deg, transparent, rgba(255, 47, 146, 0.18), transparent);
   transform: rotate(20deg) translateX(-140%);
   transition: transform 0.5s ease;
-  z-index: 2;
+  z-index: 3;
 }
 
 .card:hover .beam {
@@ -83,7 +83,6 @@
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  z-index: 0;
 }
 
 .thumbWrap {
@@ -95,6 +94,7 @@
   aspect-ratio: 9 / 20;
   overflow: hidden;
   border-radius: 10px;
+  z-index: 2;
 }
 
 .posterImg.loaded {
