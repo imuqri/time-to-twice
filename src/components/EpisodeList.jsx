@@ -1,4 +1,5 @@
 import styles from "./DetailOverlay.module.css";
+import { getThumbnailUrl } from "../utils/youtube.js";
 
 export default function EpisodeList({ episodes, onPlay }) {
   return (
@@ -6,7 +7,12 @@ export default function EpisodeList({ episodes, onPlay }) {
       {episodes.map((ep) => (
         <button key={ep.ep} className={styles.epCard} onClick={() => onPlay(ep)}>
           <div className={styles.epThumb}>
-            <span>{ep.ep}</span>
+            <img 
+              src={getThumbnailUrl(ep.youtube, 'hqdefault')} 
+              alt="" 
+              loading="lazy"
+            />
+            <span className={styles.epNumberOverlay}>{ep.ep}</span>
             <div className={styles.epPlay}>▶</div>
           </div>
           <div className={styles.epMeta}>

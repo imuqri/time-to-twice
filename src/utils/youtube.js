@@ -11,3 +11,14 @@ export function getYouTubeId(input) {
   if (match) return match[1];
   return input.trim();
 }
+
+/**
+ * Returns a YouTube thumbnail URL for a video ID or full URL.
+ * @param {string} input - Video ID or YouTube URL
+ * @param {string} quality - Thumbnail quality: 'default' (120x90), 'mqdefault' (320x180), 'hqdefault' (480x360), 'sddefault' (640x480), 'maxresdefault' (1280x720)
+ * @returns {string} Thumbnail URL
+ */
+export function getThumbnailUrl(input, quality = 'hqdefault') {
+  const id = getYouTubeId(input);
+  return `https://img.youtube.com/vi/${id}/${quality}.jpg`;
+}
