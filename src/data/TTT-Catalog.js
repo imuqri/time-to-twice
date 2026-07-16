@@ -7,7 +7,7 @@ export const CATALOG = [
   {
     "id": "time-to-twice-stay-home-game",
     "title": "Time To Twice - Stay Home Game",
-    "tagline": "Every reality season compiled",
+    "tagline": "With the world keeping everyone inside, the nine members of TWICE take over their own space for an ultimate indoor challenge. In this series premiere, the group reunites to trade their stage outfits for comfort and turn their downtime into a high-stakes competition.",
     "accentGlyph": "TTT",
     "seasons": [
       {
@@ -51,7 +51,7 @@ export const CATALOG = [
   {
     "id": "time-to-twice-noraebang-battle",
     "title": "Time To Twice - Noraebang Battle",
-    "tagline": "Every reality season compiled",
+    "tagline": "The stakes have never been higher for the members of TWICE as they step into the ultimate arena: the karaoke booth. What begins as a friendly singing competition (1:17) quickly descends into strategic chaos.",
     "accentGlyph": "TTT",
     "seasons": [
       {
