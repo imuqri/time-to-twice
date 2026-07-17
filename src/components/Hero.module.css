@@ -1,11 +1,26 @@
 .hero {
   position: relative;
-  padding: 60px 32px;
-  background: radial-gradient(ellipse at 75% 30%, rgba(255, 47, 146, 0.25), transparent 60%),
-    linear-gradient(180deg, #1a0e16, var(--bg));
+  padding: 60px 42px;
+  background: linear-gradient(180deg, #1a0e16, var(--bg));
   overflow: hidden;
   display: flex;
   align-items: center;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(66, 47, 60, 0.9) 10%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
 }
 
 .glyph {
@@ -18,11 +33,13 @@
   color: rgba(255, 47, 146, 0.08);
   letter-spacing: 4px;
   pointer-events: none;
+  z-index: 0;
 }
 
 .content {
   position: relative;
   max-width: 520px;
+  z-index: 2;
 }
 
 .content h1 {

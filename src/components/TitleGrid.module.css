@@ -91,7 +91,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  aspect-ratio: 9 / 20;
+  aspect-ratio: 9 / 19;
   overflow: hidden;
   border-radius: 10px;
   z-index: 2;

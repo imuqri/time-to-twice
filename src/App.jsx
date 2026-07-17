@@ -56,7 +56,7 @@ export default function App() {
       <main style={{
         flex: 1,
         width: '100%',
-        marginTop: viewMode === 'grid' ? '72px' : 0,
+        marginTop: viewMode === 'grid' ? '65px' : 0,
         overflow: viewMode === 'grid' ? 'auto' : 'hidden'
       }}>
         {viewMode === "grid" ? (
