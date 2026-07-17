@@ -25,7 +25,7 @@
 .compactTitle {
   white-space: white-space-collapse;
   overflow: visible;
-  text-overflow: ;
+  text-overflow: hidden;
 
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(28px, 5vw, 40px);

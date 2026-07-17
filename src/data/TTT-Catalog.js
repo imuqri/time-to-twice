@@ -345,7 +345,7 @@ export const CATALOG = [
         ]
       },
       {
-        "season": 1,
+        "season": 2,
         "title": "",
         "episodes": [
           {

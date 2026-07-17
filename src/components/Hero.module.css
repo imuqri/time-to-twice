@@ -39,7 +39,7 @@
 }
 
 .playBtn {
-  background: var(--accent);
+  background: var(--gradient-brand);
   color: #1a0510;
   border: none;
   padding: 12px 26px;
@@ -52,5 +52,5 @@
 
 .playBtn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(255, 47, 146, 0.35);
+  box-shadow: 0 6px 20px rgba(255, 95, 162, 0.35);
 }
