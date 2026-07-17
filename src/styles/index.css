@@ -26,6 +26,7 @@ body,
 
 body {
   margin: 0;
+  padding: 10px;
   background: var(--bg);
   color: var(--text);
   font-family: "Poppins", sans-serif;
@@ -33,4 +34,28 @@ body {
 
 button {
   font-family: inherit;
+}
+
+/* WebKit (Chrome, Safari, Edge) */
+#root::-webkit-scrollbar {
+  width: 6px;
+}
+
+#root::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#root::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+#root::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Firefox */
+#root {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
