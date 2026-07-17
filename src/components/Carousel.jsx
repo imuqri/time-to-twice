@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Carousel.module.css";
 import { getThumbnailUrl } from "../utils/youtube.js";
+import CarouselDots3D from "./CarouselDots3D";
 
 function getScaleFactor() {
   if (typeof window === "undefined") return 1;
@@ -160,16 +161,11 @@ export default function Carousel({
         </button>
       </div>
 
-      <div className={styles.dots}>
-        {titles.map((t, i) => (
-          <button
-            key={t.id}
-            className={`${styles.dot} ${i === activeIndex ? styles.dotActive : ""}`}
-            onClick={() => setActiveIndex(i)}
-            aria-label={`Go to ${t.title}`}
-          />
-        ))}
-      </div>
+      <CarouselDots3D
+        count={titles.length}
+        activeIndex={activeIndex}
+        onChange={setActiveIndex}
+      />
 
       {!compactHero && active && (
         <div className={styles.info}>

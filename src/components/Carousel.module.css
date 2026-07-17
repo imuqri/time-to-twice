@@ -42,6 +42,7 @@
   font-size: clamp(13px, 2.5vw, 15px);
   width: fit-content;
   max-width: 720px;
+  min-height: 5em;
   margin: 0px auto 24px;  /* centers horizontally */
 
 }
@@ -241,6 +242,59 @@
 .dotActive {
   background: var(--gradient-brand);
   transform: scale(1.3);
+}
+
+.dots3d {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 0px;
+  flex-shrink: 0;
+  padding: 14px 0;
+  perspective: 100vw;
+  transform-style: preserve-3d;
+}
+
+.dot3d {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease, background 0.3s ease;
+  transform-origin: center center;
+}
+
+.dot3d:hover {
+  background: var(--accent-soft);
+}
+
+.dot3dActive {
+  background: var(--gradient-brand);
+}
+
+@media (max-width: 1023px) {
+  .dots3d {
+    perspective: 1000px;
+  }
+  .dot3d {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (max-width: 639px) {
+  .dots3d {
+    perspective: 800px;
+    gap: 4px;
+    padding: 24px 0;
+  }
+  .dot3d {
+    width: 5px;
+    height: 5px;
+  }
 }
 
 .info {
